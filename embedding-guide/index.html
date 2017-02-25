@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Embedding Guide - Orb</title>
+    <link rel="stylesheet" href="../site.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <script src="/site.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id='banner'>
+      <img src="../Logo.svg" width='200' height='200' />
+      <ul id='nav'>
+        <li><a href='/'>Home</a></li>
+        <li><a>Embedding Guide</a></li>
+        <li><a href='/language-ref'>Language Reference</a></li>
+      </ul>
+    </div>
+    <p>Embedding orb in your site is fairly simple.</p>
+    <p>First, add the <code>orb.autoregister</code> meta (This tells Orb to auto-register the orb-edit element):</p>
+    <pre>
+<span style='color: blue'>&lt;meta</span> <span style="color: green;">name</span>=<span style='color: purple'>"orb.autoregister"</span> <span style='color: green'>value</span>=<span style='color: purple'>"true"</span><span style='color: blue'>&gt;</span></pre>
+    <p>Then, import orb:</p>
+    <pre>
+<span style='color: blue;'>&lt;script</span> <span style="color: green">src</span>=<span style='color: purple'>"/path/to/orb.js"</span><span style='color: blue;'>&gt;&lt;/script&gt;</span></pre>
+    <p>Next, add an orb-edit tag to your HTML:</p>
+    <pre>
+<span style='color: blue;'>&lt;orb-edit</span> <span style="color: green">name</span>=<span style='color: purple'>"myEdit"</span><span style='color: blue;'>&gt;</span><span style="color: darkgreen">&lt;!-- Your initial Orb code here --&gt;</span><span style='color: blue'>&lt;/orb-edit&gt;</span></pre>
+    <p>And a run button:</p>
+    <pre>
+<span style='color: blue;'>&lt;button</span> <span style="color: green">id</span>=<span style="color: purple">"runBtn"</span><span style='color: blue;'>&gt;</span>Run<span style="color: blue">&lt;/button&gt;</span></pre>
+    <p>In the JS:</p>
+    <pre>
+<span style='color: darkblue'>var</span> myEdit = <span style='color: darkblue'>new</span> orb.editor.Editor(<span style='color: darkgreen;'>'myEdit'</span>)
+  , runBtn = <span style='color: green'>document</span>.getElementById(<span style='color: darkgreen'>'runBtn'</span>);
+
+runBtn.addEventListener(<span style='color: darkgreen'>'click'</span>, <span style='color: darkblue'>function</span>() {
+  myEdit.run();
+});</pre>
+    <p>You can also make a custom logger:</p>
+    <pre>
+<span style='color: darkblue'>var</span> myLogger = {
+  log: <span style='color: darkblue'>function</span>(message) {
+    <span style='color: green'>document</span>.getElementById(<span style="color: darkgreen">'log'</span>).innerHTML += message;
+  }
+};</pre>
+    <p>And pass it in to the <code>orb.editor.Editor</code> constructor:</p>
+    <pre>
+...
+<span style='color: darkblue'>var</span> myEdit = <span style='color: darkblue'>new</span> orb.editor.Editor(<span style='color: darkgreen;'>'myEdit'</span>, myLogger)
+...</pre>
+  </body>
+</html>

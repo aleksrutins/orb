@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style id="bx-google-fonts">@import url(https://fonts.googleapis.com/css?family=ABeeZee:400,400italic);</style>
+    <pattern id="pattern-0" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse" viewBox="0 0 100 100">
+      <path d="M 0 0 L 50 0 L 50 100 L 0 100 Z" style="fill: black;"/>
+    </pattern>
+  </defs>
+  <ellipse transform="matrix(1, 0, 0, 1.000002, -375.731522, -191.249012)" cx="383.261" cy="199.047" rx="6.743" ry="7.012" style="fill: rgba(85, 174, 218, 0.560784);"/>
+  <text x="-0.832" y="12.653" style="font-family: ABeeZee; font-size: 16px; white-space: pre;">0</text>
+  <path d="M 1.613 3.253 Z" style="stroke: black; fill: none; stroke-width: 0.2;"/>
+  <path d="M 10.572 5.445 Z" style="stroke: black; fill: none; stroke-width: 0.2;"/>
+  <path d="M 8.483 1.958 Z" style="stroke: black; fill: none; stroke-width: 0.2;"/>
+  <rect style="fill: rgb(216, 216, 216);" x="-4.394" y="1.199" width="0.449" height="0.466"/>
+  <path d="M 6.222 3.063 C 6.482 2.752 6.695 2.545 6.792 2.545 C 6.967 2.545 7.043 2.842 7.068 2.942 C 7.192 3.438 7.016 3.996 7.016 4.479 C 7.016 4.338 7.064 4.214 7.102 4.099 C 7.211 3.774 7.238 3.325 7.482 3.08 C 7.555 3.063 7.595 3.046 7.655 3.046 C 7.783 3.046 7.965 3.331 7.965 3.426 L 7.965 3.408" style="stroke: black; fill: none; stroke-width: 0.2;"/>
+  <path d="M 8.673 2.856 C 8.863 2.384 9.097 2.259 9.208 2.148 C 9.226 2.213 9.275 2.403 9.312 2.476 C 9.351 2.554 9.33 2.89 9.295 2.96 C 9.24 3.068 9.295 3.217 9.243 3.322 C 9.125 3.558 9.07 3.788 8.949 4.03 C 8.909 4.11 8.865 4.321 8.794 4.392 C 8.777 4.3 9.016 4.086 9.087 3.944 C 9.163 3.792 9.32 3.634 9.415 3.443 C 9.429 3.416 9.507 3.302 9.536 3.288 C 9.596 3.258 9.756 3.154 9.812 3.098 C 9.812 3.213 9.9 3.407 9.847 3.512 C 9.748 3.709 9.716 3.902 9.571 4.047 C 9.525 4.093 9.48 4.213 9.398 4.254 C 9.211 4.348 8.979 4.306 8.76 4.306" style="stroke: black; fill: none; stroke-width: 0.2;"/>
+</svg>

@@ -1,0 +1,58 @@
+body {
+  font-family: sans-serif;
+}
+#log {
+  font-family: monospace;
+  background-color: #000;
+  border-radius: 5px;
+  color: #fff;
+  min-height: 10px;
+  padding: 4px;
+  white-space: pre;
+}
+#banner {
+  width: 100%;
+  background-color: yellow;
+  margin: 0;
+  padding: 14px;
+  font-family: 'Times New Roman', Times, serif;
+  font-style: oblique;
+  text-align: center;
+}
+#banner img {
+  transition: transform 1s;
+  font-family: sans-serif;
+}
+#banner img:hover {
+  transform: rotate(360deg);
+}
+#ascii {
+  /*font-style: italic;*/
+}
+pre {
+  border-left: 5px solid green;
+  padding-left: 6px;
+}
+ul#nav {
+  list-style-type: none;
+}
+ul#nav li {
+  display: inline;
+  margin: 7px;
+}
+ul#nav li a[href] {
+  color: blue;
+}
+code {
+  border-radius: 2px;
+  background-color: lightgrey;
+  padding: 1px;
+  margin: 1px;
+}
+#log a, pre a {
+  color: cyan;
+}
+orb-edit {
+  margin-top: 2px;
+  margin-bottom: 2px;
+}

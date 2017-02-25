@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <title>Language Referece - Orb</title>
+    <link rel="stylesheet" href="../site.css">
+    <link rel="shortcut icon" href="../favicon.png">
+    <script src="/site.js" type="text/javascript" charset="utf-8"></script>
+  </head>
+  <body>
+    <div id='banner'>
+      <img src="../Logo.svg" width='200' height='200' />
+      <ul id='nav'>
+        <li><a href='/'>Home</a></li>
+        <li><a href='/embedding-guide'>Embedding Guide</a></li>
+        <li><a>Language Reference</a></li>
+      </ul>
+    </div>
+    <p><code><var>name</var> = <var>expression</var></code>: sets the variable <var>name</var> to <var>expression</var></p>
+    <p><code><var>name</var></code>: gets the variable <var>name</var></p>
+    <p><code><var>name</var>(<var>params...</var>) = <var>expression</var></code>: defines the function <var>name(params)</var> as <var>expression</var></p>
+    <p><code><var>name</var>(<var>params...</var>)</code>: calls the function <var>name</var> with <var>params</var></p>
+    <p><code><span style='color: darkblue'>print</span> <var>expression</var></code>: prints the result of <var>expression</var></p>
+    <p><code><span style='color: darkblue'>ignore</span> <var>expression</var></code>: executes <var>expression</var></p>
+    Also, any valid JavaScript or just plain math expressions are supported in the places marked <var>expression</var>
+  </body>
+</html>
