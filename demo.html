@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Orb Demo Page</title>
+  </head>
+  <body>
+    
+    <orb-edit name="myEdit">f(x) = x+1
+print f(5)</orb-edit>
+    <button id='runBtn'>Run Code</button>
+    <div id='log'>
+<h2>Try Orb</h2>
+<img src="Logo.svg" alt="Orb" height="100" width="100" style='color: white' />
+See the <a href='munchkinhalfling.github.io/orb/language-ref'>Language Reference</a> for more information.
+Type code in the code area above and click 'Run Code' to get started!
+------------------------------------------------------------------------------------------------------------------------------------
+<div id='innerLog'></div>
+    </div>
+    <button id='clearBtn'>Clear Log</button>
+    <script>
+      var runBtn = document.getElementById('runBtn')
+        , clearBtn = document.getElementById('clearBtn')
+        , logger = {
+          log: function(message) {
+            document.getElementById('innerLog').innerHTML += (message + '\n');
+          }
+        }
+        , editor = new orb.editor.Editor('myEdit', logger);
+      runBtn.addEventListener('click', () => {
+        editor.run();
+      });
+      clearBtn.addEventListener('click', () => {
+        document.getElementById('innerLog').innerHTML = '';
+      });
+    </script>
+  </body>
+</html>
